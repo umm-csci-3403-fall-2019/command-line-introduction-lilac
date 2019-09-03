@@ -23,7 +23,7 @@ if [[ ! -w "$PATH_ARGUMENT" ]]; then
 fi
 
 #Extract, untar, and decompress the file
-tar xzf NthPrime.tgz -C "$PATH_ARGUMENT"
+tar -xzf NthPrime.tgz -C "$PATH_ARGUMENT"
 
 #move into scratch
 cd "$PATH_ARGUMENT"/NthPrime || return 1 
